@@ -1,0 +1,46 @@
+.skill {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  max-width: 375px; /* Max width for screens with a width of 375px */
+  margin: 0 auto; /* Center the content */
+}
+
+.skill-bx {
+  align-items: center;
+  width: 100%; /* Make the container take up the full width */
+}
+
+h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.skill-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: calc(50% - 20px); /* Two items per row */
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.item h5 {
+  font-size: 18px;
+  margin-top: 10px;
+}
