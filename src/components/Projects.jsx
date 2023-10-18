@@ -1,0 +1,132 @@
+import React from 'react';
+import {
+  Container, Row, Col, Tab, Nav,
+} from 'react-bootstrap';
+import TrackVisibility from 'react-on-screen';
+import ProjectCard from './ProjectCard';
+import projImg1 from '../assets/img/Game-hub.png';
+import projImg2 from '../assets/img/space-port.png';
+import projImg3 from '../assets/img/Bookstore.png';
+
+const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: 'Game-Hub',
+      description:
+        'The Game Hub app is a centralized platform where gamers can discover, explore, and engage with a diverse range of video games. It offers game recommendations, reviews, trailers, and a social community for sharing experiences. Users can track their gaming progress, connect with friends, and stay updated on the latest gaming news and events.',
+      imgUrl: projImg1,
+      projectLink: 'https://game-hub-six-sage.vercel.app/', // Example project link
+    },
+    {
+      id: 2,
+      title: 'SpacePort',
+      description:
+        "Introducing 'SpacePort: Your Cosmic Gateway'! The ultimate space traveler's hub app connecting adventurers across the cosmos. Discover launch schedules, book interstellar flights, explore celestial maps, and connect with fellow explorers.",
+      imgUrl: projImg2,
+      projectLink: 'https://react-redux-group-project-two.vercel.app/', // Example project link
+    },
+    {
+      id: 3,
+      title: 'BookStore',
+      description:
+        'Comment, Remove, Add, and Edit: Users can easily add new books to their library and provide comments or reviews for each book. They can also edit the book details, such as the title or author. Additionally, they have the ability to remove books from their library.',
+      imgUrl: projImg3,
+      projectLink: 'https://book-store-wine.vercel.app/', // Example project link
+    },
+    // Add more projects with their respective projectLink
+  ];
+
+  return (
+    <section className="project" id="projects">
+      <Container>
+        <Row>
+          <Col size={12}>
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? 'animate__animated animate__fadeIn' : ''
+                  }
+                >
+                  <h2>Projects</h2>
+                  <p>
+                    &quot;I invite you to explore my portfolio and see how my
+                    expertise translates into real-world applications. It&apos;s
+                    an opportunity to gain insights into the depth of experience
+                    I bring to every development endeavor. If you find these
+                    projects align with your requirements and vision, I&apos;m
+                    ready to collaborate on your next project, feature, or
+                    website.&quot;
+                  </p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav
+                      variant="pills"
+                      className="nav-pills mb-5 justify-content-center align-items-center"
+                      id="pills-tab"
+                    >
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content
+                      id="slideInUp"
+                      className={
+                        isVisible ? 'animate__animated animate__slideInUp' : ''
+                      }
+                    >
+                      <Tab.Pane eventKey="first">
+                        <Row>
+                          {projects.map((project) => (
+                            <ProjectCard
+                              key={project.id}
+                              title={project.title}
+                              description={project.description}
+                              imgUrl={project.imgUrl}
+                              projectLink={project.projectLink}
+                            />
+                          ))}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <p>
+                          &quot;My knowledge in full-stack development,
+                          encompasses a wide array of technologies, I&apos;m
+                          well-equipped to assist you in building your next
+                          product, feature, or website. I&apos;ve had the
+                          privilege of working with Node.js, Postgres,
+                          React/Redux, Ruby, Ruby on Rails, and JavaScript,
+                          which have allowed me to contribute to a diverse range
+                          of projects.&quot;
+                        </p>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <p>
+                          &quot;Whether it&apos;s building a new feature, revamping an
+                          existing product, or tackling a fresh project, my
+                          skill set is geared to transform ideas into reality.
+                          Feel free to explore my portfolio to witness the
+                          tangible results of my expertise, and don&apos;t hesitate
+                          to connect if you&apos;re in need of a full-stack developer
+                          who can bring your vision to life.&quot;
+                        </p>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
+};
+
+export default Projects;
