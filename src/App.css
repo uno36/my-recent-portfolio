@@ -428,7 +428,6 @@ p {
   margin-top: 10px;
 }
 
-
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -767,7 +766,6 @@ p {
   margin-top: 20px;
 }
 
-
 /* Add this CSS to your stylesheet */
 .navbar-mobile {
   display: flex;
@@ -811,7 +809,6 @@ p {
 .navbar-link.active {
   font-weight: bold;
 }
-
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
