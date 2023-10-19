@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://cosmic-strudel-640457.netlify.app/)
+- [Live Demo Link](https://tofa-emmanuel.netlify.app/)
 
 
 
