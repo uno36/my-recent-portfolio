@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { BsFillArrowRightSquareFill } from 'react-icons/bs';
 import TrackVisibility from 'react-on-screen';
-import myProfilePic from '../assets/img/myProfilePic.png';
+import myProfilePic from '../assets/img/myProfilePic-min.png';
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);

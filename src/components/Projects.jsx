@@ -3,12 +3,12 @@ import {
 } from 'react-bootstrap';
 import TrackVisibility from 'react-on-screen';
 import ProjectCard from './ProjectCard';
-import projImg1 from '../assets/img/Game-hub.png';
-import projImg2 from '../assets/img/space-port.png';
-import projImg3 from '../assets/img/commons-summit.png';
-import projImg4 from '../assets/img/MAth-Magician.png';
-import projImg5 from '../assets/img/Leaderboard-App.png';
-import projImg6 from '../assets/img/crypto-app.png';
+import projImg1 from '../assets/img/Game-hub-min.png';
+import projImg2 from '../assets/img/space-port-min.png';
+import projImg3 from '../assets/img/commons-summit-min.png';
+import projImg4 from '../assets/img/MAth-Magician-min.png';
+import projImg5 from '../assets/img/Leaderboard-App-min.png';
+import projImg6 from '../assets/img/crypto-app-min.png';
 
 const Projects = () => {
   const projects = [

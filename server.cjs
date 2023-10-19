@@ -16,7 +16,7 @@ const PORT = 5000;
 
 app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
 
-const EMAIL_USER = process.env.EMAIL_USER; // Load email user from environment variable
+const EMAIL_USER = process.env.EMAIL_USER;
 const EMAIL_PASS = process.env.EMAIL_PASS; // Load email password from environment variable
 
 // Create a nodemailer transport with valid Gmail credentials
